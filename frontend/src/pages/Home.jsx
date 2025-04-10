@@ -91,7 +91,7 @@ const Home = () => {
           Add Task
         </button>
       </div>
-      <p className="text-2xl mb-3">List of pending tasks</p>
+      {tasks.length>0 && <p className="text-2xl mb-3">List of Pending Tasks</p>}
       <ul>
         {tasks.map((task) => (
           <li
